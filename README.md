@@ -10,3 +10,5 @@ Short Description:
 - administrator account can access previous customers and verify the reviews 
 - upcoming events (and you can register for them e.g. food testing, new products, toys) 
 
+------------------------------------------------------------------------------
+Team Members: Ion Cristina - Gabriela (cris.important.work@gmail.com) , Stavarache Mihaela - Cristina (stavarachem.msc@gmail.com)
