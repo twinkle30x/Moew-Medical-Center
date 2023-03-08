@@ -9,6 +9,7 @@ Short Description:
 - leave reviews on the site 
 - administrator account can access previous customers and verify the reviews 
 - upcoming events (and you can register for them e.g. food testing, new products, toys) 
+- tinder for cats
 
 ------------------------------------------------------------------------------
 Team Members: Ion Cristina - Gabriela (cris.important.work@gmail.com) , Stavarache Mihaela - Cristina (stavarachem.msc@gmail.com)
