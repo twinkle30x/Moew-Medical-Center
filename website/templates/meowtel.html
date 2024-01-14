@@ -1,0 +1,168 @@
+{% extends "base.html" %} {% block title %}Meowtel{% endblock %} 
+{% block content %}
+<main>
+    <div class="container">
+      <h2>Meowtel - Cat Hotel Reservation</h2>
+      <p>Welcome to Meowtel, where your cat can enjoy a comfortable stay while you are away!</p>
+      <div class="images-container">
+        <img src="/static/hotel1.jpeg" alt="hotel1" height="350px">
+        <img src="/static/hotel2.png" alt="hotel2" height="350px">
+      </div>
+      <br>
+      <h4><img src="/static/calendar.png" alt="calendar" width="30" height="30">Make a Reservation</h4>
+      <form method="POST">
+        <div class="form-group">
+          <label for="checkin">Select check-in date:</label>
+          <input type="date" id="checkin" class="form-control" name="checkin" required>
+        </div>
+        <div class="form-group">
+            <label for="checkout">Select check-out date:</label>
+            <input type="date" id="checkout" class="form-control" name="checkout" required>
+          </div>
+        <div class="form-group">
+          <label for="cat-name">Cat's Name:</label>
+          <input type="text" id="cat-name" class="form-control" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="cat-breed">Cat's Breed:</label>
+          <input type="text" id="cat-breed" class="form-control" name="breed" required>
+        </div>
+        <div class="form-group">
+          <label for="cat-age">Cat's Age:</label>
+          <input type="text" id="cat-age" class="form-control" name="age" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-reservation">Confirm the reservation by clicking on the paw:</label>
+          <button class="image-button" type="submit">
+            <img src="/static/paw.png" alt="confirm" width="50px" height="50px">
+          </button>
+        </div>
+      </form>
+      <br>
+    </div>
+  </main>
+
+{% endblock %}
+
+{% block extra_css %}
+<style>
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #a2b1ff, #e397ef);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  
+    header {
+      background-color: #a2b1ff;
+      color: white;
+      padding: 20px;
+    }
+  
+    h1 {
+      margin: 0;
+    }
+  
+    nav {
+      background-color: #a2b1ff;
+      color: white;
+      padding: 10px;
+    }
+  
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li:first-child {
+        margin-left: 50px;
+    }
+
+    nav ul li:not(:last-child) {
+        margin-right: 50px;
+    }
+  
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    
+
+    .image-button {
+      background: url("paw.png") no-repeat;
+      width: 50px;
+      height: 50px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .label-image-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .label-image-container label {
+        margin-right: 10px;
+    }
+
+    .image-button span {
+      margin-right: 10px;
+    }
+
+    .images-container label {
+      margin-right: 10px;
+    }
+
+    .images-container:first-child {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .images-container {
+    display: flex;
+    justify-content: center; /* This will center the images */
+    align-items: center; /* This will align images vertically */
+    gap: 20px; /* This adds space between the images */
+    }
+
+  .images-container img {
+    max-height: 350px; /* Keeping your height constraint */
+    width: auto; /* This ensures the image maintains its aspect ratio */
+    }
+
+    main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+    .form-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .form-control {
+        width: 40%;
+        margin: 10px auto;
+    }
+
+    .form-group label {
+        text-align: right;
+    }
+
+</style>
+{% endblock %}

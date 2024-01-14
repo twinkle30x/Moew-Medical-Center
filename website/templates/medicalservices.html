@@ -1,0 +1,141 @@
+{% extends "base.html" %} {% block title %}Medical Services{% endblock %} 
+{% block content%}
+<main>
+    <div class="container">
+        <h2>Medical Services</h2>
+        <h3><img src="/static/package.png" alt="package" width="40" height="40">Packages</h3>
+        <ul>
+          <li>Common breed cats package 1 (passport, polivalent vaccine, internal and external deworming) - 140 lei</li>
+          <li>Common breed cats package 2 (passport, polivalent and rabies vaccine, internal and external deworming) - 155 lei</li>
+        </ul>
+  
+        <h3><img src="/static/veterinary.png" alt="veterinary" width="40" height="40">Consultations</h3>
+        <ul>
+          <li>Consultation - 100 lei</li>
+          <li>Night consultation 22:00-09:00 - 150 lei</li>
+          <li>Specialized orthopedic consultation - 150 lei</li>
+          <li>Night recheck - 75 lei / Day recheck - 50 lei</li>
+        </ul>
+  
+        <h3><img src="/static/ambulance.png" alt="ambulance" width="40" height="40">Veterinary Ambulance</h3>
+        <ul>
+          <li>Ambulance transportation to home in Bucharest between 09:00-22:00 - 300 lei</li>
+          <li>Ambulance transportation to home in Bucharest between 22:00-09:00 - 400 lei</li>
+          <li>Ambulance transportation to home outside of Bucharest between 09:00-22:00 Within a limit of 70 km, one way only, between 09:00-22:00 - 8 lei/km</li>
+          <li>Ambulance transportation to home outside of Bucharest between 22:00-09:00 Within a limit of 70 km, one way only, between 22:00-09:00 - 13 lei/km</li>
+        </ul>
+  
+        <h3><img src="/static/vaccine.png" alt="vaccine" width="40" height="40">Cat Vaccinations</h3>
+        <ul>
+          <li>Nobivac Rabies vaccination - 50 lei</li>
+          <li>Tricat Trio Nobivac vaccination - 90 lei</li>
+          <li>Biocan M-microsporum vaccination - 70 lei</li>
+          <li>Virbac Leucofeligen vaccination - 80 lei</li>
+        </ul>
+  
+        <h3><img src="/static/passport.png" alt="passport" width="40" height="40">Transport Documents</h3>
+        <ul>
+          <li>Issuance of health booklet with unique series - 30 lei</li>
+          <li>Issuance of health booklet for cats without series - 25 lei</li>
+          <li>Microchip implantation - 75 lei</li>
+          <li>RECS registration - 30 lei</li>
+          <li>RECS events operation - 20 lei</li>
+          <li>Issuance of international passport - 80 lei</li>
+          <li>Passport visa - 40 lei</li>
+          <li>Document issuance Issuance of prescription with stamp - 30 lei</li>
+        </ul>
+  
+        <h3><img src=/static/blood-bag.png" alt="blood-bag" width="40" height="40">Medical Services</h3>
+        <ul>
+          <li>Rectal administration - 30 lei</li>
+          <li>Oral treatment administration - 20 lei</li>
+          <li>Plaster cast - 120 lei</li>
+          <li>Simple local dressing - 70 lei</li>
+          <li>Complex dressing for cats - 80 lei</li>
+          <li>Splint immobilization for cats - 120 lei</li>
+          <li>Evacuator enema - 130 lei</li>
+          <li>IV catheter installation - 30 lei</li>
+          <li>Abdominal puncture evacuation - 150 lei</li>
+          <li>Cat bladder catheterization - 100 lei</li>
+          <li>Perianal gland expression - 60 lei</li>
+          <li>Ear grooming for cats - 50 lei</li>
+          <li>Grooming and treatment of upper wounds or restricted areas for cats - 65 lei</li>
+          <li>Grooming and treatment of extensive wounds for cats - 95 lei</li>
+          <li>Arterial pressure measurement - 20 lei</li>
+          <li>Oxygen therapy /h - 40 lei</li>
+          <li>Oxygen therapy / 12 h - 150 lei</li>
+          <li>Foreign body extraction (thorn) for cats - 65 lei</li>
+          <li>Vital functions monitoring - 40 lei/hour</li>
+          <li>Incubator maintenance / 12h - 100 lei</li>
+          <li>Incubator maintenance /h - 15 lei</li>
+          <li>Bucco-esophageal probe - 200 lei</li>
+          <li>Superficial wound suturing - 150 lei</li>
+          <li>Deep wound suturing - 250 lei</li>
+        </ul>
+      </div>
+</main>
+
+
+{% endblock %} {% block extra_css %}
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #a2b1ff, #e397ef);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    
+    header {
+      background-color: #a2b1ff;
+      color: white;
+      padding: 20px;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+   
+    nav {
+      background-color: #a2b1ff;
+      color: white;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li:first-child {
+        margin-left: 50px;
+    }
+
+    nav ul li:not(:last-child) {
+        margin-right: 50px;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    footer {
+      background-color:  #e397ef;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+</style>
+{% endblock %}
